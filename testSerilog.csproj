@@ -13,8 +13,9 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Enrichers.AspNetCore.HttpContext" Version="1.0.0" />
+    <PackageReference Include="Serilog.Enrichers.AssemblyName" Version="1.0.8" />
     <PackageReference Include="Serilog.Enrichers.Context" Version="4.0.0" />
-    <PackageReference Include="Serilog.Enrichers.HttpContextInfo" Version="1.0.0" />
     <PackageReference Include="serilog.exceptions" Version="4.1.0" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="2.6.1" />
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />

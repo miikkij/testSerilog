@@ -26,6 +26,12 @@ namespace testSerilog.Controllers
             });
         }
 
+        [HttpGet("[action]")]
+        public int CreateException(string value)
+        {
+            return Int32.Parse(value);
+        }
+
         public class WeatherForecast
         {
             public string DateFormatted { get; set; }

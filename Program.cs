@@ -34,9 +34,10 @@ namespace testSerilog
                     "f0", x => { 
                         return x.ToString().ToUpper(); 
                     }, Environment.MachineName)
-                .Enrich.WithRequest()
-                .Enrich.WithResponse()
+                .Enrich.WithAssemblyName()
+                .Enrich.WithAssemblyVersion()
                 .WriteTo.Console()
+                //.WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {EventId} {Message:lj} {Properties}{NewLine}{Exception}{NewLine}"); // Playing with https://github.com/IharYakimush/serilog-enrichers-asp-net-core-http-context
                 .WriteTo.RollingFile(
                     new Serilog.Formatting.Json.JsonFormatter(renderMessage: true), 
                     @"log-{Date}.txt")   

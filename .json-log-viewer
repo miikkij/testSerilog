@@ -1,0 +1,5 @@
+[transform]
+level=Level
+timestamp=Timestamp
+message=MessageTemplate
+extra=$
